@@ -1,0 +1,314 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--estilos personalizados-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Los mejores postres</title>
+  </head>
+  <body>
+    
+    <section id="cover">
+        <div id ="cover-texto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="display-3">Los mejores postres</h1>
+                        <p>Esta es una página web creada para los amantes de los mejores postres</p>
+                                <form method="POST">
+
+                     <input type="email" name="email" placeholder="Ingresa tu correo" />
+
+                     <button type="submit">Suscribete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--menu-->
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Recetas</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Más
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Deshabilitado</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
+          </nav>
+
+
+          <!--carrusel-->
+          <section id="carrusel">
+          <div id="carrusel-home" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carrusel-home" data-slide-to="0" class="active"></li> 
+                  <li data-target="#carrusel-home" data-slide-to="1"></li>
+                  <li data-target="#carrusel-home" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img src="img/tiramisu-receta-a.jpg" class="d-block w-100" alt="tiramisu de chocolate blanco">
+                    <div class="carousel-caption">
+                        <h3>Delisioso tiramisu de chocolate blanco</h3>
+                        <p>Muy Fácil de preparar</p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                        <img src="img/mouse-chocolate.jpg" class="d-block w-100" alt="mouse-chocolate">
+                        <div class="carousel-caption">
+                            <h3>El postre más delicioso y fácil</h3>
+                            <p>Fácil de preparar</p>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                            <img src="img/197-Receta-de-Carlota-de-fresa.jpg" class="d-block w-100" alt="Carlota de fresa">
+                            <div class="carousel-caption">
+                                <h3>¡El mejor postre hecho con fresas!</h3>
+                                <p>Fácil de preparar</p>
+                            </div>
+                          </div>
+                  
+                <a class="carousel-control-prev" href="#carrusel-home" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carrusel-home" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">siguiente</span>
+                </a>
+              </div>
+            </section>
+
+            <!--tablas rowspan-->
+
+            <section id="tablas">
+                <div class="contenido-tablas">
+                    <div class="container">
+                        <div class="col-md-6">
+                            <div class="titulo-de-tabla">
+                                <h2>Postres frios vs horneados.</h2>
+                                <div class="tablas">
+                                        <table width="100%" border="2" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                <td rowspan="3"><p>Postres frios</p></td>
+                                                <td><p>Carlota de limón</p></td>
+                                                <td><p>Tiramisú</p></td>
+                                                </tr>
+                                                <tr>
+                                                <td><p>Tarta de queso fria</p></td>
+                                                <td><p>Tarta de limón fria</p></td>
+                                                </tr>
+                                                <tr>
+                                                <td><p>Tarta de oreo</p></td>
+                                                <td><p>Tarta de tres chocolates</p></td>
+                                                </tr>
+                                                <tr>
+                                                <td rowspan="3"><p>Postres horneados</p></td>
+                                                <td><p>Brownies</p></td>
+                                                <td><p>Pay de manzana</p></td>
+                                                </tr>
+                                                <tr>
+                                                <td><p>Pastel de piña</p></td>
+                                                <td><p>Flan napoliano</p></td>
+                                                </tr>
+                                                <tr>
+                                                <td><p>Jericallas</p></td>
+                                                <td><p>Galletas con chispas</p></td>
+                                                </tr>
+                                                </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="empresa">
+                <div class="contenido-seccion">
+                        <div class="container">
+                            <h2>Acerca de "Los mejores postres"</h2>
+                            <p class="lead">Los mejores postres es un blog web especializado en enseñar recetas de postres con diferentes tipos de dificultad, esperando que todo el mundo aprenda y se deleite preparando postres delisiosos. ¡INTENTALO!</p>
+
+                            <div class="row">
+                                    <div class="col-sm-12">
+                                            <div class="card-group">
+                                                    <div class="card">
+                                                      <img src="img/Mermelada-de-manzana.jpg" class="card-img-top" alt="mermelada de manzana">
+                                                      <div class="card-body">
+                                                        <h5 class="card-title">Mermelada de manzana</h5>
+                                                        <p class="card-text">Pela las manzanas y descorazónalas. Exprime el limón y cuela su jugo para que no contenga semillas. Pon en una olla las manzanas ya cortadas junto con azúcar, el jugo de limón y una rama de canela. Deja que se cocine entre 40 minutos y 1 hora o hasta que las manzanas estén totalmente cocinadas y tiernas. Cuando la tengas lista guárdala en recipientes de cristal antes de que se enfríe. Para conservarla aguanta fenomenal un tiempo en la nevera!</p>
+                                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                      </div>
+                                                    </div>
+                                                    <div class="card">
+                                                      <img src="img/Mermelada-de-calabaza.jpg" class="card-img-top" alt="Mermelada de calabaza">
+                                                      <div class="card-body">
+                                                        <h5 class="card-title">Mermelada de calabaza</h5>
+                                                        <p class="card-text">Pelar y cortar la calabaza. Exprime medio limón y cuela el jugo. Pon los trozos de calabaza en una olla junto con azúcar, el limón y una rama de canela, mézclalo bien todo y déjalo reposar al menos 1 hora. Pon la olla a fuego medio-alto de 30 a 40 minutos. Tritura la calabaza una vez que este suave. Antes de que se enfríe guárdala en recipientes de cristal.</p>
+                                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                      </div>
+                                                    </div>
+                                                    <div class="card">
+                                                      <img src="img/Mermelada-de-moras.jpg" class="card-img-top" alt="Mermelada de moras">
+                                                      <div class="card-body">
+                                                        <h5 class="card-title">Mermelada de moras</h5>
+                                                        <p class="card-text">Exprime medio limón y cuela su jugo. Echa en la olla azúcar, el jugo de limón y agua; déjalo todo junto reposar 1 hora. Enciende el fuego para que esté a temperatura media y en cuanto la mezcla empiece a hervir baja la temperatura para que esté suave y deja que se cocine entre unos 40 minutos. Mientras se cocina ve retirando la espuma que se forma por encima. Aparta la olla del fuego y tritura la mezcla con una batidora de mano directamente en la olla a velocidad baja durante unos minutos. Antes de que se enfríe guárdala en recipientes de cristal.</p>
+                                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </section>
+
+                                <section id="acerca-de">
+                                    <div class="contenido-seccion">
+                                        <div clas="container">
+                                            <div class="col-md-6">
+                                                <div class="texto acerca de">
+                                                   <h2>Acerca de "Los mejores postres"</h2>
+                                                   <p class="lead">
+                                                       Suscribete a mi sitio web para hacer de "Los mejores postres" un portal más grande; Además podrás recibir actulizaciones de este sitio en tu correo electrónico.
+                                                   </p>
+                                                   <h3>¡Siguenos en Facebook!</h3>
+                                                   <a href="http://www.facebook.com/Los-mejores-Postres-111633530314816/?" class="btn btn-sm btn-secondary-outline">Facebook</a>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!--card columns-->
+                                <sectiion>
+                                        <div class="card-columns">
+                                                <div class="card">
+                                                  <img src="img/COULANT DE CHOCOLATE BLANCO.jpg" class="card-img-top" alt="coulant de chocolate blanco">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">Coulant de chocolate blanco.</h5>
+                                                    <p class="card-text">Coulant, fondant o volcán es un conocido postre de chocolate patentado por el chef francés Michel Bras en 1981 en su restaurante de Laguiole (con 3 estrellas Michelin), en la meseta de l'Aubrac, al suroeste de Francia. Se presenta como pequeño bizcocho de chocolate con el interior fundido. De este modo, cuando el comensal corta el bizcocho de su interior le brota una cremosa salsa de chocolate que se extiende por el plato.</p>
+                                                  </div>
+                                                </div>
+                                                <div class="card p-3">
+                                                  <blockquote class="blockquote mb-0 card-body">
+                                                    <p>
+                                                            Por regla general, se denomina chocolate al producto final del procesado del fruto. El cultivo del cacao, y su consumo, hacen que el chocolate vaya adquiriendo relevancia social, religiosa, medicinal, política y económica en diversas sociedades. Su propagación, aceptación y difusión a lo largo del mundo es tal, que en la actualidad no existe región donde no haya llegado su influencia</p>
+                                                    <footer class="blockquote-footer">
+                                                      <small class="text-muted">
+                                                            Evan Grivetti, Louis (2009)<cite title="Source Title"></cite>
+                                                      </small>
+                                                    </footer>
+                                                  </blockquote>
+                                                </div>
+                                                <div class="card">
+                                                  <img src="    img/Postres-espectaculares-macarons.jpg" class="card-img-top" alt="macarrones">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">Macarrons</h5>
+                                                    <p class="card-text">Originalmente, el macaron se elaboraba sin relleno y se comía de a una tapa por vez como una galleta crujiente. En 1862, Louis Ernest Ladurée. un molinero francés que fundó su propia panadería, comenzó a elaborarlos con dos tapas y una mermelada o ganache entre medio</p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                  </div>
+                                                </div>
+                                                <div class="card bg-primary text-white text-center p-3">
+                                                  <blockquote class="blockquote mb-0">
+                                                    <p>-No cualquiera puede convertirse en un gran artista, pero un gran artista puede provenir de cualquier lugar.</p>
+                                                    <footer class="blockquote-footer text-white">
+                                                      <small>
+                                                        <cite title="Source Title">Anton Ego</cite>
+                                                      </small>
+                                                    </footer>
+                                                  </blockquote>
+                                                </div>
+                                                <div class="card text-center">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">-Datos curiosos</h5>
+                                                    <p class="card-text">Existen millones de ingredientes pero el  más utilizado en la repostería es el azúcar.</p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                  </div>
+                                                </div>
+                                                <div class="card">
+                                                  <img src="img/arroz con leche.jpg" class="card-img-top" alt="arroz con leche">
+                                                </div>
+                                                <div class="card p-3 text-right">
+                                                  <blockquote class="blockquote mb-0">
+                                                    <p>El arroz con leche es considerado un postre típico mexicano. La receta, por ser tan sencilla como exquisita, fue adoptada rápidamente por muchísima gente, además de que sus ingredientes eran baratos y fáciles de conseguir.</p>
+                                                    <footer class="blockquote-footer">
+                                                      <small class="text-muted">
+                                                         <cite title="Source Title">HOTBOOK</cite>
+                                                      </small>
+                                                    </footer>
+                                                  </blockquote>
+                                                </div>
+                                                <div class="card">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">-Datos curiosos</h5>
+                                                    <p class="card-text">. Los mayas y los aztecas utilizaban el cacao como moneda de cambio.</p>
+                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                </sectiion>
+
+                                <footer id="footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <p>Creado por: Perla Alejandra Soriano Velasco y Francisco Alejandro Alba Sierra</p>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
